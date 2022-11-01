@@ -239,6 +239,7 @@ footer {
   width: 100%;
   padding: 0 15px;
 }
+
 .wrapper-header {
   display: flex;
   justify-content: space-between;
@@ -316,8 +317,10 @@ footer {
 }
 .footerflex {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: row;
+}
+.footerlinklogo {
+  padding-top: 60px;
 }
 .section-team {
   padding-top: 94px;
@@ -328,6 +331,11 @@ footer {
 }
 .insideimageportfolio {
   flex-basis: calc((100% - 60px) / 3);
+  transform: box-shadow 0.2s;
+}
+.insideimageportfolio:hover,
+.insideimageportfolio:focus {
+  box-shadow: 21px 18px 5px -13px #000000;
 }
 .insideportfolio {
   border-bottom: 1px solid #eeeeee;
@@ -404,10 +412,34 @@ footer {
   margin-left: 32px;
   margin-right: 32px;
 }
+.social-list2 {
+  display: flex;
+  gap: 10px;
+  padding-top: 20px;
+}
+.social-link-footer {
+  padding-left: 70px;
+  padding-top: 72px;
+}
+.socialfooter {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
 
 .social-icon {
   height: 20px;
   width: 20px;
+}
+.social-icon2 {
+  height: 20px;
+  width: 20px;
+  --color3: var(--brand-background);
 }
 .social-item {
   list-style: none;
@@ -427,14 +459,40 @@ footer {
 .social-icon:hover {
   --color3: white;
 }
+.social-link2 {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  justify-content: center;
+}
+
+.social-link2:hover {
+  background: var(--hover);
+}
 /* nasi klienci */
 .customer {
   list-style: none;
   display: flex;
+  gap: 30px;
 }
 .contaeiner-icon-list2 {
   height: 92px;
   width: 170px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+}
+.icon-logo {
+  margin: 17px 32px 14px 32px;
+}
+.contaeiner-icon-list2:hover {
+  --color3: var(--hover);
+}
+.contaeiner-icon-list2:hover {
+  --color2: var(--hover);
+}
+.customerh {
+  margin-bottom: 50px;
 }
