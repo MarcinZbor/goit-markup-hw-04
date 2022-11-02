@@ -347,19 +347,12 @@ footer {
 }
 
 /* dekoracja ikon */
+.contact:hover,
+.contact:focus {
+  --color2: var(--hover);
+  --color4: var(--hover);
+}
 
-.icon-envelope:hover {
-  --color2: var(--hover);
-}
-.icon-envelope:focus {
-  --color2: var(--hover);
-}
-.icon-smartphone:hover {
-  --color4: var(--hover);
-}
-.icon-smartphone:focus {
-  --color4: var(--hover);
-}
 .section-background {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -456,9 +449,13 @@ footer {
   background: var(--hover);
 }
 
-.social-icon:hover {
+/* .social-icon:hover {
+  --color3: white;
+} */
+.social-link:hover {
   --color3: white;
 }
+
 .social-link2 {
   display: flex;
   width: 44px;
@@ -478,20 +475,19 @@ footer {
   display: flex;
   gap: 30px;
 }
-.contaeiner-icon-list2 {
-  height: 92px;
-  width: 170px;
+.logo-link {
+  display: flex;
+  gap: 30px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
+.logo-link:hover {
+  border-color: var(--hover);
+  --color3: var(--hover);
+  --color2: var(--hover);
+}
 .icon-logo {
   margin: 17px 32px 14px 32px;
-}
-.contaeiner-icon-list2:hover {
-  --color3: var(--hover);
-}
-.contaeiner-icon-list2:hover {
-  --color2: var(--hover);
 }
 .customerh {
   margin-bottom: 50px;
